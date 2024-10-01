@@ -6,9 +6,9 @@ use Illuminate\Console\Command;
 
 class LaravelPayPocketCommand extends Command
 {
-    public $signature = 'laravel-pay-pocket';
+    public $signature = 'laravel-pay-pocket:install';
 
-    public $description = 'My command';
+    public $description = 'My command ';
 
     public function handle(): int
     {

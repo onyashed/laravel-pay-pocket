@@ -26,13 +26,14 @@ interface WalletOperations
      *
      * @throws InsufficientBalanceException
      */
+    //Pay for product or services from a supplier using the balance in the wallet.
     public function pay(int|float $orderValue, ?string $notes = null): void;
 
     /**
      * Deposit an amount to the user's wallet of a specific type.
      */
     //The deposit source goes into notes. 2024 Oct 1 16:45 Hrs.
-    //Get mobile payments and atm payments into the wallet.
+    //Get mobile payments and api paypal pesapal payments/deposits into the wallet.
     public function deposit(string $type, int|float $amount, ?string $notes = null): bool;
 
     /**
